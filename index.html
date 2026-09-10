@@ -832,3 +832,1577 @@
       gap: 6px;
     }
   }
+    /* ---------- How I work ---------- */
+
+  .steps-row{
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .step{
+    flex: 1;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .step-icon{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    color: #fff;
+  }
+
+  .step:nth-child(odd) .step-icon{
+    background: var(--violet);
+  }
+
+  .step:nth-child(even) .step-icon{
+    background: var(--coral);
+  }
+
+  .step:nth-child(5n) .step-icon{
+    background: var(--teal);
+  }
+
+  .step h3{
+    font-size: 0.98rem;
+    margin-bottom: 6px;
+  }
+
+  .step p{
+    color: var(--muted);
+    font-size: 0.86rem;
+  }
+
+  .sarrow{
+    flex: 0 0 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--line);
+    padding-top: 26px;
+  }
+
+  .sarrow svg{
+    width: 22px;
+    height: 22px;
+    stroke: rgba(26,26,46,0.28);
+  }
+
+  @media (max-width: 900px){
+    .steps-row{
+      flex-wrap: wrap;
+    }
+
+    .step{
+      flex: 1 1 40%;
+      margin-bottom: 26px;
+    }
+
+    .sarrow{
+      display: none;
+    }
+  }
+
+  /* ---------- About ---------- */
+
+  .about-grid{
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
+    align-items: start;
+  }
+
+  .about-bio p{
+    color: var(--ink);
+    font-size: 1.03rem;
+    margin-bottom: 16px;
+    max-width: 56ch;
+  }
+
+  .about-bio p:last-child{
+    margin-bottom: 0;
+  }
+
+  .bring{
+    background: #fff;
+    border: 1.5px solid var(--ink);
+    border-radius: var(--radius);
+    padding: 26px 26px;
+  }
+
+  .bring h3{
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+
+  .bring ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  .bring li{
+    display: flex;
+    gap: 10px;
+    font-size: 0.93rem;
+    color: var(--ink);
+  }
+
+  .bring li svg{
+    margin-top: 3px;
+    color: var(--teal);
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 860px){
+    .about-grid{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* ---------- Skills ---------- */
+
+  .skills-groups{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .skill-group h3{
+    font-size: 0.98rem;
+    margin-bottom: 14px;
+    color: var(--muted);
+    font-weight: 600;
+  }
+
+  .pills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .pill{
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 1.5px solid var(--ink);
+    font-size: 0.87rem;
+    font-weight: 500;
+    transition:
+      background 0.15s ease,
+      color 0.15s ease;
+  }
+
+  .pill:hover{
+    background: var(--ink);
+    color: var(--bg);
+  }
+
+  /* ---------- CTA band ---------- */
+
+  .contact-actions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .cta-band{
+    background: var(--teal-tint);
+    text-align: center;
+  }
+
+  .cta-band .wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+  }
+
+  .cta-band h2{
+    font-size: clamp(1.3rem, 3vw, 1.7rem);
+    max-width: 24ch;
+  }
+
+  /* ---------- Footer ---------- */
+
+  footer{
+    background: var(--ink);
+    color: rgba(252,251,248,0.82);
+    padding: 40px 0;
+  }
+
+  .foot-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .foot-links{
+    display: flex;
+    gap: 22px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .foot-links a{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.88rem;
+    color: rgba(252,251,248,0.82);
+    transition: color 0.15s ease;
+  }
+
+  .foot-links a:hover{
+    color: #fff;
+  }
+
+  .foot-copy{
+    font-size: 0.85rem;
+    color: rgba(252,251,248,0.55);
+  }
+
+  @media (max-width: 860px){
+    .hero-grid{
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="progress" id="progress"></div>
+
+<div class="topbar">
+  <div class="topbar-inner">
+
+    <a href="#top" class="brand">
+      <span class="avatar">NM</span>
+      <span class="brand-name">Neha More</span>
+    </a>
+
+    <ul class="navlinks" id="navlinks">
+      <li><a href="#work" data-nav>Work</a></li>
+      <li><a href="#about" data-nav>About</a></li>
+      <li><a href="#skills" data-nav>Skills</a></li>
+      <li><a href="#contact" data-nav>Contact</a></li>
+    </ul>
+
+    <a class="btn btn-violet btn-sm"
+       href="mailto:nehamoray24@gmail.com">
+      Let's connect
+    </a>
+
+  </div>
+</div>
+
+<div id="top"></div>
+
+<header class="hero wrap">
+
+  <div class="hero-grid">
+
+    <div>
+
+      <div class="hero-id">
+
+        <span class="avatar-lg">NM</span>
+
+        <div>
+          <div class="name">Neha More</div>
+          <div class="title">Aspiring Software Developer</div>
+        </div>
+
+      </div>
+
+      <span class="badge">
+        Aspiring Java Developer | Backend &amp; AI
+      </span>
+
+      <h1>
+        Building practical solutions through Java, web technologies, and continuous learning.
+      </h1>
+
+      <p class="sub">
+        E&amp;TC engineering graduate (2026) with hands-on Java experience across four end-to-end projects — Spring Boot, MySQL, REST APIs, LLM integration, and IoT — plus a Java development internship.
+      </p>
+
+      <div class="hero-actions">
+
+        <a class="btn btn-violet" href="#work">
+          View case studies
+        </a>
+
+        <a class="btn btn-outline"
+           id="resume-link"
+           href="Neha-More-Portfolio.pdf"
+           target="_blank"
+           rel="noopener">
+          Download résumé
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="diagram"
+         role="img"
+         aria-label="Workflow: Problem, then Design, then Build and test, then Outcome">
+
+      <div class="dbox accent-violet">
+        <div class="k">Problem</div>
+        <div class="v">Ambiguous ask, unclear scope</div>
+      </div>
+
+      <div class="dconn" aria-hidden="true">
+        <svg viewBox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="1.75">
+          <path d="M4 12h14M13 6l6 6-6 6"/>
+        </svg>
+      </div>
+
+      <div class="dbox">
+        <div class="k">Design</div>
+        <div class="v">Schema &amp; API contracts</div>
+      </div>
+
+      <div class="dconn" aria-hidden="true">
+        <svg viewBox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="1.75">
+          <path d="M4 12h14M13 6l6 6-6 6"/>
+        </svg>
+      </div>
+
+      <div class="dbox accent-coral">
+        <div class="k">Build &amp; test</div>
+        <div class="v">Java, Spring Boot, JUnit</div>
+      </div>
+
+      <div class="dconn" aria-hidden="true">
+        <svg viewBox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="1.75">
+          <path d="M4 12h14M13 6l6 6-6 6"/>
+        </svg>
+      </div>
+
+      <div class="dbox accent-teal">
+        <div class="k">Outcome</div>
+        <div class="v">10,000+ links, O(1) avg lookup</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<section class="stats">
+
+  <div class="wrap">
+
+    <div class="stats-grid" id="stats-grid">
+
+      <div class="stat">
+        <div class="num">4</div>
+        <div class="label">End-to-end projects built</div>
+      </div>
+
+      <div class="stat">
+        <div class="num">10,000+</div>
+        <div class="label">Collision-free short links generated</div>
+      </div>
+
+      <div class="stat">
+        <div class="num">500+</div>
+        <div class="label">Expense records tested against</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="wrap">
+
+  <div class="section-head">
+    <h2>How I operate</h2>
+    <p>
+      Before the case studies — the thinking that shapes how I approach every project.
+    </p>
+  </div>
+
+  <div class="pillars-grid">
+
+    <div class="pillar">
+      <h3>Own the whole SDLC</h3>
+      <p>
+        I treat requirements, design, and delivery as one job, not separate handoffs — every project I've built went from a written ask to a working system, tested end to end.
+      </p>
+    </div>
+
+    <div class="pillar">
+      <h3>Test before I trust it</h3>
+      <p>
+        JUnit coverage, input validation, and exception handling aren't an afterthought — they're part of what "done" means, on every module I build.
+      </p>
+    </div>
+
+    <div class="pillar">
+      <h3>AI-augmented, not AI-dependent</h3>
+      <p>
+        I use tools like Claude, Cursor, and GitHub Copilot to move faster, but I still own the schema design, API contracts, and correctness myself.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="work" class="wrap">
+
+  <div class="section-head">
+    <h2>Case studies</h2>
+    <p>
+      Four end-to-end projects, from schema to working feature.
+    </p>
+  </div>
+
+  <div class="cases-grid">
+
+
+    <!-- Pathwright -->
+
+    <div class="case top-violet">
+
+      <div class="case-tags">
+        <span>Java</span>
+        <span>Spring Boot</span>
+        <span>OpenAI API</span>
+        <span>MySQL</span>
+      </div>
+
+      <h3>
+        Pathwright — AI-powered learning roadmap generator
+      </h3>
+
+      <div class="mock mock-violet mock-roadmap">
+
+        <div class="ms">
+          <span class="dotm"></span>
+          <span class="barm"></span>
+        </div>
+
+        <div class="ms">
+          <span class="dotm"></span>
+          <span class="barm short"></span>
+        </div>
+
+        <div class="ms">
+          <span class="dotm"></span>
+          <span class="barm"></span>
+        </div>
+
+      </div>
+
+      <div class="stat-row">
+        <span class="num">3</span>
+        <span class="lbl">
+          normalized relational tables: users → roadmaps → milestones
+        </span>
+      </div>
+
+      <details class="cs-details">
+
+        <summary>
+          Read case study
+
+          <svg class="icon"
+               viewBox="0 0 24 24">
+            <path d="M6 9l6 6 6-6"/>
+          </svg>
+
+        </summary>
+
+        <div class="cs-body">
+
+          <p>
+            <strong>Problem:</strong>
+            Someone with a target role and a rough sense of their current skills has no structured way to see what to learn next, in what order.
+          </p>
+
+          <p>
+            <strong>Approach:</strong>
+            Built a full-stack app where a user's skills and target role are sent to an LLM, which generates a structured, milestone-based roadmap with categorized topics and resources. Added JSON schema validation with automatic retry logic to handle malformed LLM responses, backed by a normalized relational schema for persistent progress tracking.
+          </p>
+
+          <p>
+            <strong>Outcome:</strong>
+            A working Spring Boot REST API with proper error handling (404/502) and a responsive frontend for real-time milestone completion tracking.
+          </p>
+
+          <p>
+            <a href="https://github.com/Nehamore24/learning-path-generator"
+               target="_blank"
+               rel="noopener">
+              View on GitHub →
+            </a>
+          </p>
+
+        </div>
+
+      </details>
+
+    </div>
+
+
+    <!-- Expense Tracker -->
+
+    <div class="case top-coral">
+
+      <div class="case-tags">
+        <span>Java</span>
+        <span>Spring</span>
+        <span>MySQL</span>
+        <span>JDBC</span>
+      </div>
+
+      <h3>Expense Tracker</h3>
+
+      <div class="mock mock-coral mock-bars">
+
+        <div class="bb" style="height:40%;"></div>
+        <div class="bb" style="height:70%;"></div>
+        <div class="bb" style="height:50%;"></div>
+        <div class="bb" style="height:85%;"></div>
+        <div class="bb" style="height:35%;"></div>
+
+      </div>
+
+      <div class="stat-row">
+        <span class="num">500+</span>
+        <span class="lbl">records tested against</span>
+      </div>
+
+      <details class="cs-details">
+
+        <summary>
+          Read case study
+
+          <svg class="icon"
+               viewBox="0 0 24 24">
+            <path d="M6 9l6 6 6-6"/>
+          </svg>
+
+        </summary>
+
+        <div class="cs-body">
+
+          <p>
+            <strong>Problem:</strong>
+            People lose track of day-to-day spending without a simple, reliable place to log and categorize it.
+          </p>
+
+          <p>
+            <strong>Approach:</strong>
+            Architected a full-featured Java backend with secure user authentication, RESTful CRUD endpoints, and category-wise expense tracking. Designed and normalized a relational MySQL schema, integrated via JDBC with connection pooling, plus exception handling, input validation, and unit testing.
+          </p>
+
+          <p>
+            <strong>Outcome:</strong>
+            A backend tested against 500+ records, with clean category-wise reporting ready for a frontend to sit on top of.
+          </p>
+
+          <p>
+            <a href="https://github.com/Nehamore24/javaproject3"
+               target="_blank"
+               rel="noopener">
+              View on GitHub →
+            </a>
+          </p>
+
+        </div>
+
+      </details>
+
+    </div>
+        <!-- Link Shortener -->
+
+    <div class="case top-teal">
+
+      <div class="case-tags">
+        <span>Java</span>
+        <span>DSA</span>
+        <span>Hash Tables</span>
+        <span>REST</span>
+      </div>
+
+      <h3>Link Shortener</h3>
+
+      <!-- This is the URL example shown in your screenshot -->
+
+      <div class="mock mock-teal mock-url">
+
+        <div class="row">
+
+          <svg class="icon"
+               style="width:13px;height:13px;"
+               viewBox="0 0 24 24">
+
+            <path d="M10 14a5 5 0 007.07 0l2.83-2.83a5 5 0 00-7.07-7.07l-1.5 1.5"/>
+            <path d="M14 10a5 5 0 00-7.07 0L4.1 12.83a5 5 0 007.07 7.07l1.5-1.5"/>
+
+          </svg>
+
+          <span class="urlbar">
+            https://mycompany.com/blog/annual-review-2025
+          </span>
+
+        </div>
+
+
+        <div class="row out">
+
+          <svg class="icon"
+               style="width:13px;height:13px;"
+               viewBox="0 0 24 24">
+
+            <path d="M4 12h14M13 6l6 6-6 6"/>
+
+          </svg>
+
+          <span class="urlbar short">
+            short.ly/x7Qa2
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="stat-row">
+
+        <span class="num">10,000+</span>
+
+        <span class="lbl">
+          collision-free links, O(1) avg lookup
+        </span>
+
+      </div>
+
+
+      <details class="cs-details">
+
+        <summary>
+
+          Read case study
+
+          <svg class="icon"
+               viewBox="0 0 24 24">
+
+            <path d="M6 9l6 6 6-6"/>
+
+          </svg>
+
+        </summary>
+
+
+        <div class="cs-body">
+
+          <p>
+            <strong>Problem:</strong>
+            Long URLs are unwieldy to share, and a shortening service needs to stay fast and collision-free as it scales.
+          </p>
+
+          <p>
+            <strong>Approach:</strong>
+            Engineered a URL-shortening service using Base62 encoding and custom hash-table structures to generate unique, collision-free short links at scale, with end-to-end redirect logic via REST API, input validation, and robust error handling.
+          </p>
+
+          <p>
+            <strong>Outcome:</strong>
+            10,000+ unique short links generated with O(1) average lookup performance.
+          </p>
+
+          <p>
+            <a href="https://github.com/Nehamore24/link-shortener"
+               target="_blank"
+               rel="noopener">
+              View on GitHub →
+            </a>
+          </p>
+
+        </div>
+
+      </details>
+
+    </div>
+
+
+    <!-- Wireless EV Charging -->
+
+    <div class="case top-violet">
+
+      <div class="case-tags">
+        <span>IoT</span>
+        <span>Wireless Power Transfer</span>
+        <span>Automated Billing</span>
+      </div>
+
+      <h3>
+        Wireless EV Charging with IoT Billing System
+      </h3>
+
+      <div class="mock mock-violet mock-url">
+
+        <div class="row">
+
+          <svg class="icon"
+               style="width:13px;height:13px;"
+               viewBox="0 0 24 24">
+
+            <path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/>
+
+          </svg>
+
+          Charging session active
+
+        </div>
+
+        <div class="row out">
+          → Bill generated automatically
+        </div>
+
+      </div>
+
+
+      <details class="cs-details">
+
+        <summary>
+
+          Read case study
+
+          <svg class="icon"
+               viewBox="0 0 24 24">
+
+            <path d="M6 9l6 6 6-6"/>
+
+          </svg>
+
+        </summary>
+
+
+        <div class="cs-body">
+
+          <p>
+            <strong>Problem:</strong>
+            Plug-in EV charging requires a physical connection and manual usage tracking, adding friction for both drivers and charging-point operators.
+          </p>
+
+          <p>
+            <strong>Approach:</strong>
+            Built a concept pairing wireless power transfer for contact-free charging with an IoT-enabled system that measures usage and generates the bill automatically, removing manual metering from the process.
+          </p>
+
+          <p>
+            <strong>Outcome:</strong>
+            A working proof-of-concept demonstrating wireless charging paired with automated, usage-based billing end-to-end.
+          </p>
+
+        </div>
+
+      </details>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="wrap">
+
+  <div class="section-head">
+    <h2>Experience</h2>
+  </div>
+
+
+  <div class="timeline">
+
+    <div class="trow">
+
+      <div class="when">
+        2025 — Present
+      </div>
+
+      <div>
+
+        <h3>Personal Projects</h3>
+
+        <div class="org">
+          Self-directed
+        </div>
+
+        <p>
+          Building full-stack Java systems end-to-end — from schema design through testing — including an LLM-integrated learning roadmap generator and a hash-table-backed URL shortener.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="trow">
+
+      <div class="when">
+        Jan 2025 — Feb 2025
+      </div>
+
+      <div>
+
+        <h3>Java Developer Intern</h3>
+
+        <div class="org">
+          MotionCut
+        </div>
+
+        <p>
+          Built and debugged Java backend modules using OOP principles and Spring Framework, delivering reusable components across multiple client-facing projects. Collaborated under Agile/Scrum, contributing to code reviews and JUnit test coverage that kept feature delivery on schedule.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="wrap">
+
+  <div class="section-head">
+    <h2>How I work</h2>
+  </div>
+
+
+  <div class="steps-row">
+
+    <div class="step">
+
+      <div class="step-icon">
+
+        <svg class="icon"
+             viewBox="0 0 24 24">
+
+          <circle cx="11" cy="11" r="7"/>
+          <path d="M21 21l-4.3-4.3"/>
+
+        </svg>
+
+      </div>
+
+      <h3>Understand</h3>
+
+      <p>
+        Clarify the real problem and constraints before writing code.
+      </p>
+
+    </div>
+
+
+    <div class="sarrow">
+
+      <svg viewBox="0 0 24 24"
+           fill="none"
+           stroke-width="1.75">
+
+        <path d="M4 12h16M14 6l6 6-6 6"/>
+
+      </svg>
+
+    </div>
+
+
+    <div class="step">
+
+      <div class="step-icon">
+
+        <svg class="icon"
+             viewBox="0 0 24 24">
+
+          <path d="M4 6l8-3 8 3-8 3-8-3z"/>
+          <path d="M4 12l8 3 8-3"/>
+          <path d="M4 18l8 3 8-3"/>
+
+        </svg>
+
+      </div>
+
+      <h3>Design</h3>
+
+      <p>
+        Sketch the schema, API contracts, and edge cases up front.
+      </p>
+
+    </div>
+
+
+    <div class="sarrow">
+
+      <svg viewBox="0 0 24 24"
+           fill="none"
+           stroke-width="1.75">
+
+        <path d="M4 12h16M14 6l6 6-6 6"/>
+
+      </svg>
+
+    </div>
+
+
+    <div class="step">
+
+      <div class="step-icon">
+
+        <svg class="icon"
+             viewBox="0 0 24 24">
+
+          <path d="M8 6L2 12l6 6M16 6l6 6-6 6"/>
+
+        </svg>
+
+      </div>
+
+      <h3>Build</h3>
+
+      <p>
+        Implement in Java/Spring, favoring reusable, tested components.
+      </p>
+
+    </div>
+
+
+    <div class="sarrow">
+
+      <svg viewBox="0 0 24 24"
+           fill="none"
+           stroke-width="1.75">
+
+        <path d="M4 12h16M14 6l6 6-6 6"/>
+
+      </svg>
+
+    </div>
+
+
+    <div class="step">
+
+      <div class="step-icon">
+
+        <svg class="icon"
+             viewBox="0 0 24 24">
+
+          <path d="M12 3l7 3v6c0 5-3 7-7 9-4-2-7-4-7-9V6l7-3z"/>
+          <path d="M9 12l2 2 4-4"/>
+
+        </svg>
+
+      </div>
+
+      <h3>Validate</h3>
+
+      <p>
+        Cover it with JUnit and input validation, not just happy paths.
+      </p>
+
+    </div>
+
+
+    <div class="sarrow">
+
+      <svg viewBox="0 0 24 24"
+           fill="none"
+           stroke-width="1.75">
+
+        <path d="M4 12h16M14 6l6 6-6 6"/>
+
+      </svg>
+
+    </div>
+
+
+    <div class="step">
+
+      <div class="step-icon">
+
+        <svg class="icon"
+             viewBox="0 0 24 24">
+
+          <path d="M12 2v14M12 16l-4-4M12 16l4-4"/>
+          <path d="M5 20h14"/>
+
+        </svg>
+
+      </div>
+
+      <h3>Ship &amp; iterate</h3>
+
+      <p>
+        Deploy, gather feedback, and refine based on what breaks.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="about" class="wrap">
+
+  <div class="section-head">
+    <h2>About</h2>
+  </div>
+
+
+  <div class="about-grid">
+
+    <div class="about-bio">
+
+      <p>
+        Neha treats every project as a system to be owned end-to-end, not just the coding in between requirements and a demo. That mindset runs through her work: a normalized schema before a single endpoint gets written, error handling designed in from the start, and test coverage that's part of the definition of done rather than a cleanup step.
+      </p>
+
+      <p>
+        She's an Electronics &amp; Telecommunication Engineering graduate (2026) from Sinhgad College of Engineering, Pune — and a Java developer by choice, built through an internship and four self-directed projects that each produced something real: a working API, a tested backend, a working feature.
+      </p>
+
+    </div>
+
+
+    <div class="bring">
+
+      <h3>What I bring</h3>
+
+      <ul>
+
+        <li>
+          <svg class="icon"
+               viewBox="0 0 24 24">
+            <path d="M20 6L9 17l-5-5"/>
+          </svg>
+
+          Full-SDLC ownership — requirements through delivery, not just code
+        </li>
+
+        <li>
+          <svg class="icon"
+               viewBox="0 0 24 24">
+            <path d="M20 6L9 17l-5-5"/>
+          </svg>
+
+          Testing discipline — JUnit coverage built in, not bolted on afterward
+        </li>
+
+        <li>
+          <svg class="icon"
+               viewBox="0 0 24 24">
+            <path d="M20 6L9 17l-5-5"/>
+          </svg>
+
+          Cross-functional collaboration under Agile/Scrum, including code-review contributions that kept releases on schedule
+        </li>
+
+        <li>
+          <svg class="icon"
+               viewBox="0 0 24 24">
+            <path d="M20 6L9 17l-5-5"/>
+          </svg>
+
+          Comfortable integrating LLM tooling (OpenAI API, Claude, Cursor, Copilot) without losing ownership of correctness
+        </li>
+
+        <li>
+          <svg class="icon"
+               viewBox="0 0 24 24">
+            <path d="M20 6L9 17l-5-5"/>
+          </svg>
+
+          Certified in Oracle Cloud Infrastructure Generative AI and IBM Enterprise Data Science
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="skills" class="wrap">
+
+  <div class="section-head">
+    <h2>Skills</h2>
+  </div>
+
+
+  <div class="skills-groups">
+
+    <div class="skill-group">
+
+      <h3>Languages &amp; core CS</h3>
+
+      <div class="pills">
+
+        <span class="pill">Java</span>
+        <span class="pill">Python</span>
+        <span class="pill">Data Structures &amp; Algorithms</span>
+        <span class="pill">OOP</span>
+        <span class="pill">DBMS</span>
+        <span class="pill">Exception Handling</span>
+        <span class="pill">Collections Framework</span>
+
+      </div>
+
+    </div>
+
+
+    <div class="skill-group">
+
+      <h3>Backend &amp; APIs</h3>
+
+      <div class="pills">
+
+        <span class="pill">Spring</span>
+        <span class="pill">Spring Boot</span>
+        <span class="pill">REST API Design</span>
+        <span class="pill">SQL</span>
+        <span class="pill">MySQL</span>
+        <span class="pill">JDBC</span>
+        <span class="pill">Database Design</span>
+
+      </div>
+
+    </div>
+
+
+    <div class="skill-group">
+
+      <h3>AI &amp; LLM integration</h3>
+
+      <div class="pills">
+
+        <span class="pill">OpenAI API</span>
+        <span class="pill">Prompt Engineering</span>
+        <span class="pill">JSON Schema Validation</span>
+        <span class="pill">Claude</span>
+        <span class="pill">Cursor</span>
+        <span class="pill">GitHub Copilot</span>
+
+      </div>
+
+    </div>
+
+
+    <div class="skill-group">
+
+      <h3>Web &amp; tools</h3>
+
+      <div class="pills">
+
+        <span class="pill">HTML</span>
+        <span class="pill">CSS</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">Node.js</span>
+        <span class="pill">Git</span>
+        <span class="pill">GitHub</span>
+        <span class="pill">Eclipse</span>
+        <span class="pill">VS Code</span>
+        <span class="pill">Agile / Scrum</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="contact" class="wrap">
+
+  <div class="section-head">
+
+    <h2>Get in touch</h2>
+
+    <p>
+      Looking for a Java developer or open to chatting about a project? I'd be glad to hear from you.
+    </p>
+
+  </div>
+
+
+  <div class="contact-actions">
+
+    <a class="btn btn-violet"
+       href="mailto:nehamoray24@gmail.com">
+      Email me
+    </a>
+
+    <a class="btn btn-outline"
+       href="https://www.linkedin.com/in/neha-more-169810294"
+       target="_blank"
+       rel="noopener">
+      LinkedIn
+    </a>
+
+    <a class="btn btn-outline"
+       href="https://github.com/Nehamore24"
+       target="_blank"
+       rel="noopener">
+      GitHub
+    </a>
+
+    <a class="btn btn-outline resume-link"
+       href="Neha-More-Portfolio.pdf"
+       target="_blank"
+       rel="noopener">
+      Resume
+    </a>
+
+  </div>
+
+</section>
+
+
+<section class="cta-band">
+
+  <div class="wrap">
+
+    <h2>
+      Looking for a Java developer who builds and keeps learning?
+    </h2>
+
+    <a class="btn btn-violet"
+       href="mailto:nehamoray24@gmail.com">
+      Let's connect
+    </a>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <div class="wrap">
+
+    <div class="foot-row">
+
+      <span class="foot-copy">
+        © 2026 Neha Sudhirkumar More
+      </span>
+
+
+      <ul class="foot-links">
+
+        <li>
+
+          <a href="mailto:nehamoray24@gmail.com">
+
+            <svg class="icon"
+                 viewBox="0 0 24 24">
+
+              <path d="M4 5h16v14H4z"/>
+              <path d="M4 6l8 7 8-7"/>
+
+            </svg>
+
+            Email
+
+          </a>
+
+        </li>
+
+
+        <li>
+
+          <a href="https://www.linkedin.com/in/neha-more-169810294"
+             target="_blank"
+             rel="noopener">
+
+            <svg class="icon"
+                 viewBox="0 0 24 24">
+
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M8 11v5M8 8v.01M12 16v-3a2 2 0 0 1 4 0v3M12 13v3"/>
+
+            </svg>
+
+            LinkedIn
+
+          </a>
+
+        </li>
+
+
+        <li>
+
+          <a href="https://github.com/Nehamore24"
+             target="_blank"
+             rel="noopener">
+
+            <svg class="icon"
+                 viewBox="0 0 24 24">
+
+              <path d="M9 19c-4 1.5-4-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2-.2 4-1 4-4.5 0-1-.5-2-1-2.5.1-.5.5-1.5 0-3 0 0-1 0-3 1.5-2-.5-4-.5-6 0-2-1.5-3-1.5-3-1.5-.5 1.5-.1 2.5 0 3-.5.5-1 1.5-1 2.5 0 3.5 2 4.3 4 4.5-.5.5-.5 1-.5 2V21"/>
+            </svg>
+
+            GitHub
+
+          </a>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+(function(){
+
+  var reduceMotion =
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+
+  /* Scroll progress bar */
+
+  var progress =
+    document.getElementById('progress');
+
+
+  function updateProgress(){
+
+    var h = document.documentElement;
+
+    var scrolled =
+      (h.scrollTop) /
+      (h.scrollHeight - h.clientHeight) *
+      100;
+
+    progress.style.width =
+      (scrolled || 0) + '%';
+
+  }
+
+
+  document.addEventListener(
+    'scroll',
+    updateProgress,
+    { passive: true }
+  );
+
+  updateProgress();
+
+
+  /* Smooth scroll for nav links */
+
+  document.querySelectorAll(
+    'a[href^="#"]'
+  ).forEach(function(a){
+
+    a.addEventListener(
+      'click',
+      function(e){
+
+        var id =
+          a.getAttribute('href').slice(1);
+
+        var target =
+          document.getElementById(id);
+
+        if(target){
+
+          e.preventDefault();
+
+          target.scrollIntoView({
+            behavior: reduceMotion
+              ? 'auto'
+              : 'smooth',
+
+            block: 'start'
+          });
+
+        }
+
+      }
+    );
+
+  });
+
+
+  /* Active nav highlighting */
+
+  var navLinks =
+    document.querySelectorAll(
+      '#navlinks a[data-nav]'
+    );
+
+  var sectionIds =
+    ['work','about','skills','contact'];
+
+  var sections =
+    sectionIds
+      .map(function(id){
+        return document.getElementById(id);
+      })
+      .filter(Boolean);
+
+
+  if(
+    'IntersectionObserver' in window &&
+    sections.length
+  ){
+
+    var navObserver =
+      new IntersectionObserver(
+        function(entries){
+
+          entries.forEach(function(entry){
+
+            if(entry.isIntersecting){
+
+              navLinks.forEach(function(l){
+                l.classList.remove('active');
+              });
+
+              var match =
+                document.querySelector(
+                  '#navlinks a[href="#' +
+                  entry.target.id +
+                  '"]'
+                );
+
+              if(match){
+                match.classList.add('active');
+              }
+
+            }
+
+          });
+
+        },
+        {
+          rootMargin:
+            '-40% 0px -50% 0px',
+
+          threshold: 0
+        }
+      );
+
+
+    sections.forEach(function(s){
+      navObserver.observe(s);
+    });
+
+  }
+
+
+  /* Stats fade/lift into view */
+
+  var stats =
+    document.querySelectorAll('.stat');
+
+
+  if(
+    'IntersectionObserver' in window &&
+    stats.length
+  ){
+
+    var statObserver =
+      new IntersectionObserver(
+        function(entries, obs){
+
+          entries.forEach(function(entry){
+
+            if(entry.isIntersecting){
+
+              var el =
+                entry.target;
+
+              var delay =
+                Array.prototype.indexOf.call(
+                  stats,
+                  el
+                ) * 90;
+
+
+              setTimeout(
+                function(){
+                  el.classList.add('in-view');
+                },
+                reduceMotion ? 0 : delay
+              );
+
+
+              obs.unobserve(el);
+
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.35
+        }
+      );
+
+
+    stats.forEach(function(s){
+      statObserver.observe(s);
+    });
+
+  }else{
+
+    stats.forEach(function(s){
+      s.classList.add('in-view');
+    });
+
+  }
+
+})();
+
+</script>
+
+</body>
+</html>
