@@ -39,8 +39,6 @@ An application designed to help users generate structured learning and career pa
 An IoT-based project combining wireless EV charging with energy monitoring and billing.
 
 ## 📫 Connect With Me
-
-- 📧 Email: nehamoray24@gmail.com
 - 💼 LinkedIn: https://www.linkedin.com/in/neha-more-169810294
 
 
