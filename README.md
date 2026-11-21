@@ -367,16 +367,6 @@ Savitribai Phule Pune University · Graduated 2026
 
 ---
 
-## 🌱 Current Learning
-
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6d28d9?style=for-the-badge&logo=springboot&logoColor=white&labelColor=0d0b1e)
-![DSA](https://img.shields.io/badge/Data%20Structures%20%26%20Algorithms-7c3aed?style=for-the-badge&labelColor=0d0b1e)
-![ML](https://img.shields.io/badge/Machine%20Learning-4338ca?style=for-the-badge&labelColor=0d0b1e)
-![GenAI](https://img.shields.io/badge/Generative%20AI%20%26%20LLM%20APIs-3b82f6?style=for-the-badge&labelColor=0d0b1e)
-![Power BI](https://img.shields.io/badge/Power%20BI-8b5cf6?style=for-the-badge&logo=powerbi&logoColor=white&labelColor=0d0b1e)
-
----
-
 ## 📊 GitHub Analytics
 
 <div align="center">
