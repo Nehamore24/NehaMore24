@@ -104,37 +104,65 @@ I'm **Neha More**, a B.E. Electronics & Telecommunication graduate (2026) from *
 
 **Programming Languages**
 
-<img src="https://skillicons.dev/icons?i=py,java,js,html,css&theme=dark" alt="Languages" />
-&nbsp;![SQL](https://img.shields.io/badge/SQL-6d28d9?style=for-the-badge&logo=databricks&logoColor=white&labelColor=0d0b1e)
+<p>
+<img src="https://img.shields.io/badge/Python-6d28d9?style=for-the-badge&logo=python&logoColor=white&labelColor=0d0b1e" alt="Python" />
+<img src="https://img.shields.io/badge/Java-4338ca?style=for-the-badge&logo=openjdk&logoColor=white&labelColor=0d0b1e" alt="Java" />
+<img src="https://img.shields.io/badge/SQL-7c3aed?style=for-the-badge&labelColor=0d0b1e" alt="SQL" />
+<img src="https://img.shields.io/badge/JavaScript-6d28d9?style=for-the-badge&logo=javascript&logoColor=white&labelColor=0d0b1e" alt="JavaScript" />
+<img src="https://img.shields.io/badge/HTML-4338ca?style=for-the-badge&logo=html5&logoColor=white&labelColor=0d0b1e" alt="HTML" />
+<img src="https://img.shields.io/badge/CSS-3b82f6?style=for-the-badge&logo=css3&logoColor=white&labelColor=0d0b1e" alt="CSS" />
+</p>
 
 **Data Analytics**
 
-<img src="https://skillicons.dev/icons?i=powerbi,pandas,numpy,matplotlib&theme=dark" alt="Data analytics" />
-&nbsp;![Excel](https://img.shields.io/badge/Excel-6d28d9?style=for-the-badge&logo=microsoftexcel&logoColor=white&labelColor=0d0b1e)
-![Seaborn](https://img.shields.io/badge/Seaborn-6d28d9?style=for-the-badge&labelColor=0d0b1e)
+<p>
+<img src="https://img.shields.io/badge/Excel-6d28d9?style=for-the-badge&logo=microsoftexcel&logoColor=white&labelColor=0d0b1e" alt="Excel" />
+<img src="https://img.shields.io/badge/Power%20BI-4338ca?style=for-the-badge&logo=powerbi&logoColor=white&labelColor=0d0b1e" alt="Power BI" />
+<img src="https://img.shields.io/badge/Pandas-6d28d9?style=for-the-badge&logo=pandas&logoColor=white&labelColor=0d0b1e" alt="Pandas" />
+<img src="https://img.shields.io/badge/NumPy-4338ca?style=for-the-badge&logo=numpy&logoColor=white&labelColor=0d0b1e" alt="NumPy" />
+<img src="https://img.shields.io/badge/Matplotlib-7c3aed?style=for-the-badge&logo=matplotlib&logoColor=white&labelColor=0d0b1e" alt="Matplotlib" />
+<img src="https://img.shields.io/badge/Seaborn-3b82f6?style=for-the-badge&labelColor=0d0b1e" alt="Seaborn" />
+</p>
 
 `Exploratory Data Analysis` · `Data Cleaning` · `Data Visualization` · `Statistical Analysis`
 
 **Machine Learning & AI**
 
-<img src="https://skillicons.dev/icons?i=sklearn&theme=dark" alt="ML" />
+<p>
+<img src="https://img.shields.io/badge/Scikit-learn-6d28d9?style=for-the-badge&logo=scikitlearn&logoColor=white&labelColor=0d0b1e" alt="Scikit-learn" />
+<img src="https://img.shields.io/badge/Generative%20AI-4338ca?style=for-the-badge&labelColor=0d0b1e" alt="Generative AI" />
+<img src="https://img.shields.io/badge/LLM%20APIs-7c3aed?style=for-the-badge&logo=openai&logoColor=white&labelColor=0d0b1e" alt="LLM APIs" />
+</p>
 
 `Regression` · `Classification` · `Model Evaluation` · `Predictive Analytics` · `Generative AI Fundamentals` · `LLM API Integration`
 
 **Java Development**
 
-<img src="https://skillicons.dev/icons?i=java,spring&theme=dark" alt="Java" />
+<p>
+<img src="https://img.shields.io/badge/Core%20Java-6d28d9?style=for-the-badge&logo=openjdk&logoColor=white&labelColor=0d0b1e" alt="Core Java" />
+<img src="https://img.shields.io/badge/Spring%20Boot-4338ca?style=for-the-badge&logo=springboot&logoColor=white&labelColor=0d0b1e" alt="Spring Boot" />
+<img src="https://img.shields.io/badge/JDBC-7c3aed?style=for-the-badge&labelColor=0d0b1e" alt="JDBC" />
+</p>
 
 `Core Java` · `OOP` · `Collections` · `Exception Handling` · `JDBC` · `File Handling` · `Spring Boot Fundamentals`
 
 **Databases**
 
-<img src="https://skillicons.dev/icons?i=mysql,postgres,supabase&theme=dark" alt="Databases" />
+<p>
+<img src="https://img.shields.io/badge/MySQL-6d28d9?style=for-the-badge&logo=mysql&logoColor=white&labelColor=0d0b1e" alt="MySQL" />
+<img src="https://img.shields.io/badge/PostgreSQL-4338ca?style=for-the-badge&logo=postgresql&logoColor=white&labelColor=0d0b1e" alt="PostgreSQL" />
+<img src="https://img.shields.io/badge/Supabase-7c3aed?style=for-the-badge&logo=supabase&logoColor=white&labelColor=0d0b1e" alt="Supabase" />
+</p>
 
 **Tools**
 
-<img src="https://skillicons.dev/icons?i=git,github,vscode,idea&theme=dark" alt="Tools" />
-&nbsp;![Jupyter](https://img.shields.io/badge/Jupyter-6d28d9?style=for-the-badge&logo=jupyter&logoColor=white&labelColor=0d0b1e)
+<p>
+<img src="https://img.shields.io/badge/Git-6d28d9?style=for-the-badge&logo=git&logoColor=white&labelColor=0d0b1e" alt="Git" />
+<img src="https://img.shields.io/badge/GitHub-4338ca?style=for-the-badge&logo=github&logoColor=white&labelColor=0d0b1e" alt="GitHub" />
+<img src="https://img.shields.io/badge/VS%20Code-7c3aed?style=for-the-badge&logo=visualstudiocode&logoColor=white&labelColor=0d0b1e" alt="VS Code" />
+<img src="https://img.shields.io/badge/IntelliJ%20IDEA-3b82f6?style=for-the-badge&logo=intellijidea&logoColor=white&labelColor=0d0b1e" alt="IntelliJ IDEA" />
+<img src="https://img.shields.io/badge/Jupyter-6d28d9?style=for-the-badge&logo=jupyter&logoColor=white&labelColor=0d0b1e" alt="Jupyter" />
+</p>
 
 ---
 
